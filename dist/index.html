@@ -7,10 +7,26 @@
 </head>
 <body>
   <header>
-
+    <h1>Backbone View Leak</h1>
   </header>
   <main>
+    <div class="columns small-12">
+      <button class="button" id="add-widget">Add Widget</button>
+      <button class="button" id="remove-widget">Remove Widget</button>
+    </div>
+    <section id="leaky" class="columns small-6">
+      <h2>Leaky</h2>
+      <button class="button render">Re-render</button>
+      <button class="button event">Trigger Event</button>
+      <ul class="widgets"></ul>
+    </section>
 
+    <section id="plugged" class="columns small-6">
+      <h2>Plugged</h2>
+      <button class="button render">Re-render</button>
+      <button class="button event">Trigger Event</button>
+      <ul class="widgets"></ul>
+    </section>
   </main>
   <footer>
 
